@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--css링크-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <!--자바스크립트--->
+    <script src="https://kit.fontawesome.com/34fe6c8668.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.min.js"></script>
+    <script src="js/header_menu.js"></script>
+    <script src="js/sub_inside_fd.js"></script>
+    <script src="js/sub_book_hide1.js"></script>
+    <script src="js/sub_publisher.js"></script>
+    <script src="js/sub_book_slide1.js"></script>
+    <script src="js/sub_re_close.js"></script>
+    <script src="js/sub_click.js"></script>
+
+    <!--Open Api-->
+        <script src="js/sub_author_ajax.js"></script>
+        <script src="js/sub_book_slide_ajax.js"></script>
+
+
+</head>
+
+<body>
+    <div id="top_banner">
+        <div class="top_banner_left_wrap">
+            <div class="top_banner_left">
+                <img src="img/header/top_banner1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="top_banner_right_wrap">
+            <div class="top_banner_right">
+                <img src="img/header/top_banner2.jpg" alt="">
+                <span>
+                    <img src="img/header/top_banner_close.png" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!--헤더-->
+    <header>
+
+        <!--탑-->
+        <div id="header_top">
+            <nav id="header_top_nav">
+                <ul id="header_top_left">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#" class="text_main_color">도서바로가기</a></li>
+                    <li><a href="#">티켓</a></li>
+                    <li><a href="#">투어</a></li>
+                </ul>
+                <ul id="header_top_right">
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>|</li>
+                    <li><a href="#">북카트</a></li>
+                    <li>|</li>
+                    <li id="mypage_main"><a href="#">마이페이지</a>
+                        <img src="img/header/arrow_down.png" alt="">
+                        <ul id="mypage_sub">
+                            <li><a href="#">마이도서</a>
+                            <li><a href="#">주문배송조회</a>
+                            <li><a href="#">마이페이지</a>
+                            <li><a href="#">I-포인트적립</a>
+                            <li><a href="#">나의할인쿠폰</a>
+                        </ul>
+                    </li>
+                    <li>|</li>
+                    <li><a href="#">북피니언</a></li>
+                    <li>|</li>
+                    <li><a href="#">고객센터</a></li>
+                    <li>|</li>
+                    <li><a href="#">모바일APP</a></li>
+                    <li>|</li>
+                    <li id="Language_main"><a href="#">Language</a>
+                        <img src="img/header/arrow_down.png" alt="">
+                        <ul id="lanuage_sub">
+                            <li><a href="#">English</a>
+                            <li><a href="#">日本語</a>
+                            <li><a href="#">中文</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--미드-->
+        <div id="header_mid">
+
+            <div id="logo">
+                <a href="index.html"><img src="img/header/logo.png" alt=""></a>
+            </div>
+
+            <div id="header_search">
+                <div class="header_search_bar">
+                    <input type="search" class="serach_bar_text" placeholder="개는 천재다">
+                    <a href="#">
+                        <img src="img/header/btn_search.png" alt="">
+                    </a>
+                </div>
+
+                <div class="header_search_nav">
+                    <ul class="serach_ul">
+                        <li><a href="#">김훈 소설집</a></li>
+                        <li>|</li>
+                        <li><a href="#">치매 백과사전</a></li>
+                        <li>|</li>
+                        <li><a href="#">프로파일러</a></li>
+                        <li>|</li>
+                        <li><a href="#">안녕달 신간</a></li>
+                        <li>|</li>
+                        <li><a href="#">핏블리</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!--바텀-->
+        <div id="header_bottom">
+            <nav id="header_bottom_nav">
+
+                <!--바텀 슬라이드 클릭-->
+                <div id="nav_slide">
+                    <ul id="nav_ul_main">
+                        <li>
+                            <span>국내도서</span>
+
+                            <ul id="nav_ul_sub">
+
+
+                                <li>
+                                    <a href="#"><span>소설</span></a>
+                                    <a href="#"><span>자격서·수험서</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>장르소설</span></a>
+                                    <a href="#"><span>공무원수험서</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>시·에세이</span></a>
+                                    <a href="#"><span>컴퓨터·인터넷</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>경제경영</span></a>
+                                    <a href="#"><span>전공·대학교재</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>자기계발</span></a>
+                                    <a href="#"><span>여행</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>사회과학</span></a>
+                                    <a href="#"><span>취미레저</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>역사·문화</span></a>
+                                    <a href="#"><span>공무원수험서</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>예술·대중문화</span></a>
+                                    <a href="#"><span>잡지</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>인문</span></a>
+                                    <a href="#"><span>만화·라이트노벨</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>자연·과학</span></a>
+                                    <a href="#"><span>유아동전집</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>종교·역학</span></a>
+                                    <a href="#"><span class="scolor">예약판매</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>유아</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>아동</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>가정과생활</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>청소년</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>초등학습</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>중등학습</span></a>
+
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>고등학습</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>국어·외국어·사전</span></a>
+                                </li>
+
+
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <span>외국도서</span>
+
+                            <ul id="nav_ul_sub">
+                                <li>
+                                    <a href="#"><span>어린이</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>문학</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>ELT·사전</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>컴퓨터</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>경제·인문</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>실용·예술</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>대학·전문서적</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>해외잡지</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>학습교구/게임</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>프랑스도서</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="scolor">예약판매</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="scolor">원서vs번역서</span></a>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>음반</span>
+                            <ul id="nav_ul_sub">
+
+                                <li>
+                                    <a href="#"><span>가요</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>팝</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>클래식</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>국악</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>일본음악</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>락</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>뉴에이지</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>해외구매</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>수입음반</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>재즈</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>유아·아동·태교</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>뮤직 DVD</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>O.S.T</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>월드뮤직</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="scolor">예약판매</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="scolor">스타샵</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="scolor">아티스트파일</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="scolor">LP</span></a>
+                                </li>
+
+
+
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>DVD</span>
+                            <ul id="nav_ul_sub">
+
+                                <li>
+                                    <a href="#"><span>블루레이</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>EBS교육용</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>유아동·교육DVD</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>영화</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>다큐멘터리</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>건강·취미·스포츠</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>TV시리즈</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>해외구매</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>블루레이해외구매</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>애니메이션</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>예약판매</span></a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li> <span>굿즈#</span>
+                            <ul id="nav_ul_sub">
+
+                                <li>
+                                    <a href="#"><span>문구/팬시</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>사무/학용</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>학습</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span>독서용품</span></a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="all_category">
+                    <li id="all_click">
+                        <a href="#">
+                            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                            <span>전체카테고리</span>
+                            <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                        </a>
+
+                    </li>
+                </ul>
+
+                <ul class="category1">
+                    <li><a href="sub.html">베스트샐러</a></li>
+                    <li><a href="sub.html">신간</a></li>
+                    <li><a href="sub.html">이벤트</a></li>
+                    <li><a href="sub.html">정가인하</a></li>
+                </ul>
+
+                <ul class="category2">
+                    <li><a href="sub.html">음반</a></li>
+                    <li><a href="sub.html">DVD</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!--섹션 시작-->
+
+
+
+    <section>
+        <div id="sub_nav">
+            <ul>
+                <li><a href="">홈 <i class="fa-solid fa-caret-down fa-2xs" style="color: #7a7a7a;"></i></a></li>
+                <li><i class="fa-solid fa-angle-right fa-2xs"></i></li>
+                <li><a href="">국내도서<i class="fa-solid fa-caret-down fa-2xs" style="color: #7a7a7a;"></i></a></li>
+                <li><i class="fa-solid fa-angle-right fa-2xs"></i></li>
+                <li><a href="">소설</a><i class="fa-solid fa-caret-down fa-2xs" style="color: #7a7a7a;"></i></li>
+                <li><a href=""><i class="fa-solid fa-angle-right fa-2xs"></i></a></li>
+                <li><a href="">한국소설<i class="fa-solid fa-caret-down fa-2xs" style="color: #7a7a7a;"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right fa-2xs"></i></a></li>
+                <li><a href="">현대소설<i class="fa-solid fa-caret-down fa-2xs" style="color: #7a7a7a;"></i></a></li>
+
+            </ul>
+        </div>
+
+        <!--sub title-->
+
+        <div id="sub_title">
+            <div id="title_wrap">
+                <p>곰돌이 푸, 행복한 코딩은 매일 있어
+                    <span>&nbsp; : 아직 코딩을 기다리는 우리에게</span>
+                </p>
+
+                <span class="sub_boder_box">베스트셀러</span>
+                <span class="sub_boder_box">소득공제</span>
+            </div>
+
+            <div id="review_wrap">
+                <div id="review_box">
+                    <span class="star">★★★★★</span>
+                    <span>9.9</span>
+                    <span>|</span>
+                    <span>
+                        <img src="img/sub/sub_title/" alt="">
+                        리뷰
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <!--product 시작-->
+
+        <div id="sub_product">
+            <div id="product_left">
+
+                <div id="product_img">
+                    <img src="img/sub/sub_title/sub_book.jpg" alt="">
+                </div>
+
+                <div id="product_see">
+                    <ul>
+                        <li>
+                            <a href=""><img src="img/sub/sub_title/product_btn1.png" alt=""></a>
+                        </li>
+
+                        <li>
+                            <a href=""> <img src="img/sub/sub_title/product_btn2.png" alt=""></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div id="product_share_wrap">
+
+                    <div class="product_ct_box">
+                        <span>판매자수</span>
+                        <span class="color">3,286</span>
+                    </div>
+
+                    <div class="product_ct_box">
+                        <span>공유하기</span>
+                        <span><img src="img/sub/sub_title/icon_share1.png" alt=""></span>
+                        <span><img src="img/sub/sub_title/icon_share2.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--sub product_right-->
+
+            <div id="product_right">
+                <div id="product_nav">
+                    <ul>
+                        <li>
+                            저 :
+                            <span><a href="">곰돌이 푸</a></span>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            역 :
+                            <span><a href="">정은희</a></span>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            저 :
+                            <span><a href="">알에이치코리아</a></span>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            발행 :
+                            <span>2020년 10월 14일</span>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            쪽수 :
+                            <span>160</span>
+                        </li>
+
+                        <li>|</li>
+
+                        <li>
+                            ISBN :
+                            <span>9788925563350</span>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div id="product_table">
+                    <table>
+                        <tr>
+                            <th>정가</th>
+                            <td>14,800</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <div class="red_box">
+                                    <h4>새책</h4>
+                                    <h3>13,320원<span>(10%할인)</span></h3>
+                                    <p>740p <span>(5%적립)</span> </p>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>할인혜택</th>
+                            <td class="td_cursor">
+                                <i class="fa-solid fa-angle-right fa-2xs" style="color: #dd2727;"></i>
+                                카드/간편결제 할인
+                                <span>|</span>
+                                무이자 할부
+                                <i class="fa-solid fa-angle-right fa-2xs" style="color: #dd2727;"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>적립혜택</th>
+                            <td>
+                                <span class="td_span1">740p</span>
+                                (5%적립)
+                                <span>|</span>
+                                <span class="td_span2">5만원이상 주문시 2천P+등급별 최대 1.5%적립</span>
+                                <i class="fa-solid fa-angle-right fa-2xs" style="color: #dd2727;"></i>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td>
+                                I-Point 적립은 마이페이지에서 직접
+                                <span class="td_span3">구매확정</span>
+                                하신 경우에만 적립됩니다.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>추가혜택</th>
+                            <td>
+                                <img src="img/sub/sub_table/purchase_coupon1.jpg" alt="">
+                                <img src="img/sub/sub_table/purchase_coupon2.jpg" alt="">
+                                <img src="img/sub/sub_table/purchase_coupon3.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr style="height: 30px; background-color: red;">
+                            <th colspan="2">
+                                <img src="img/sub/sub_table/table_banner_orange.png" alt="">
+                            </th>
+
+                        </tr>
+
+                        <tr>
+                            <th>배송정보</th>
+                            <td> <span class="td_span4">6/29(수) 이내 발송 예정 (서울시 강남구 삼성로 512)</span>
+                                <span class="td_span4">무료배송</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>주문수량</th>
+                            <td>
+                                <select name="select" id="select">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div id="product_btn_wrap">
+                        <button class="table_btn1">북카트 담기</button>
+                        <button class="table_btn2">바로구매</button>
+                        <button class="table_btn3">🤍 3,394</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--sub_content 시작-->
+
+        <div id="sub_content">
+            <div id="content_ul_wrap">
+                <ul id="content_ul">
+                    <li onclick="Movescroll('#ct_wrap')">책정보</li>
+                    <li onclick="Movescroll('#event_scroll')">이벤트/기획전</li>
+                    <li onclick="Movescroll('#event_slide_wrap')">추천도서</li>
+                    <li onclick="Movescroll('#all_review')">리뷰/기대평</li>
+                    <li onclick="Movescroll('#exchange')">교환/환불/배송</li>
+                </ul>
+            </div>
+
+            <div id="ct_wrap">
+
+                <h2 class="move0">이상품의 분류</h2>
+
+                <div id="ct_home_ul_wrap">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><i class="fa-solid fa-angle-right fa-2xs" style="color: #5c5c5c;"></i></li>
+                        <li><a href="#">도서</a></li>
+                        <li><i class="fa-solid fa-angle-right fa-2xs" style="color: #5c5c5c;"></i></li>
+                        <li><a href="#">소설</a></li>
+                        <li><i class="fa-solid fa-angle-right fa-2xs" style="color: #5c5c5c;"></i></li>
+                        <li><a href="#">외국소설</a></li>
+                        <li><i class="fa-solid fa-angle-right fa-2xs" style="color: #5c5c5c;"></i></li>
+                        <li><a href="#">유럽소설</a></li>
+                    </ul>
+                </div>
+
+                <h2 class="move1">북 인사이드</h2>
+
+                <div id="inside_wrap">
+
+                    <div id="inside_left">
+                        <ul id="inside_ul">
+                            <li>곰돌이푸를 소개합니다!</li>
+                            <li>곰돌이 푸, 기억에서 소환해!</li>
+                            <li>코딩알 사랑한 곰돌이 푸</li>
+                            <li>용감한 곰돌이 푸</li>
+                            <li>나는야 행복한 곰돌이!</li>
+                            <li>곰돌이 푸가 직접 소개합니다</li>
+                        </ul>
+                    </div>
+
+                    <div id="inside_right">
+
+                        <div id="inside_fade_wrap">
+                            <div class="inside_fade">
+                                <span><i class="fa-solid fa-caret-right" style="color: #ff1900;"></i></span>
+                                <img src="img/sub/sub_inside/inside_1.jpg" alt="">
+                            </div>
+
+                            <div class="inside_fade">
+                                <span><i class="fa-solid fa-caret-right" style="color: #ff1900;"></i></span>
+                                <img src="img/sub/sub_inside/inside_2.jpg" alt="">
+                            </div>
+
+                            <div class="inside_fade">
+                                <span><i class="fa-solid fa-caret-right" style="color: #ff1900;"></i></span>
+                                <img src="img/sub/sub_inside/inside_3.jpg" alt="">
+                            </div>
+
+                            <div class="inside_fade">
+                                <span><i class="fa-solid fa-caret-right" style="color: #ff1900;"></i></span>
+                                <img src="img/sub/sub_inside/inside_4.jpg" alt="">
+                            </div>
+
+                            <div class="inside_fade">
+                                <span><i class="fa-solid fa-caret-right" style="color: #ff1900;"></i></span>
+                                <img src="img/sub/sub_inside/inside_5.jpg" alt="">
+                            </div>
+
+                            <div class="inside_fade">
+                                <span><i class="fa-solid fa-caret-right" style="color: #ff1900;"></i></span>
+                                <img src="img/sub/sub_inside/inside_6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="inside_imgbox">
+                            <img src="img/sub/sub_inside/inside_7.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <h2>책 소개</h2>
+                <div class="ct_content1">
+                    <p>디즈니의 사랑스러운 푸가 코딩을 전하는 행복!</p><br><br>
+
+                    <p>『곰돌이 푸, 행복한 코딩은 매일 있어』는 푸의 메시지와 삽화가 담긴 책이다. 어떤 상황에서든 여유와 미소를 잊지 않는 곰돌이 푸를 다시 기억하고 만나
+                        는 일은, 반복되는 삶 속에서 무엇이 나를 행복하게 하는지를 잊어가는 우리에게, 다시 한 번 코딩에 관한 희망과 의미를 되새기게 해줄 것이다. 귀엽고
+                        사랑스러운 모습부터 엉뚱한 모습까지 우리를 자꾸만 웃음 짓게 만드는 코딩을, 진심 어린 말로 우리의 마음을 자꾸만 무장 해제시키는 코딩을, 초기 삽화
+                        부터 우리에게 익숙한 만화영화 속 곰돌이 푸가 설명하는 코딩의 퀄리티를 높은 디즈니의 삽화로 소장할 수 있는 것도 큰 즐거움이다.</p><br>
+
+                    <div class="ct_end1">
+                        <p>매일 즐거운 일이 생기지 않으면 인생이 재미없다고 생각하는 사람들이 있다.
+                            하지만 진정한 코딩을 맞딱드린다면, 인생의 행복을 찾지 않으려 해도 이미 행복은 내곁에 와있다는 것을 깨닫게 된다.
+                            『곰돌이 푸, 행복한 코딩은 매일 있어』과 함께한다면 그 어떤 빛나는 여정보다도 눈부실것이다.
+                        </p><br>
+                    </div>
+
+                    <div class="hide_btn">
+                        <p class="close">펼쳐보기<i class="fa-solid fa-chevron-down fa-2xs" style="color: #db2929;"></i></p>
+                        <p class="close">접어보기<i class="fa-solid fa-chevron-up fa-2xs" style="color: #cf262e;"></i>
+                    </div>
+
+                </div>
+
+                <h2>출판사 서평</h2>
+                <div class="ct_content2">
+                    <p class="textbold">“푸, 코딩 뭐라고 생각해?”</p>
+                    <p>그 시절의 우리가 묻고 곰돌이 푸가 답하다.</p>
+                    <p>월트 디즈니의 명작 애니메이션 「곰돌이 푸」 삽화 수록!</p>
+                    <p>세계에서 가장 유명한 곰 ‘곰돌이 푸’가 전하는 코딩의 말!</p><br><br>
+
+                    <p>A.A 밀른의 《Winnie the Pooh 위니 더 푸》라는 동명의 동화가 원작인 애니메이션 <곰돌이 푸>는 1977년 월트 디즈니의 스튜디오에서 탄생하여 92년간 전 세계
+                            아이들에게 행복한 코딩을 전했다. 이후 여러 버전으로 재해석되며 큰 사랑을 받은 <곰돌이 푸>는
+                                1990년대부터 2000년대 초반까지 디즈니 만화동산을 보며 자란 한국 독자들에게는 누구나 사랑할 수밖에 없는 추억의 친구이기도 하다.</p><br>
+
+                    <div class="ct_end2">
+                        <p>그 시절의 아이들이 어른이 된 지금에는 곰돌이 푸가 코딩의 삶에 관한 명대사로 다시금 회자되고 있다. 그 속에는 언뜻 단순하고 두루뭉술해 보이지만 코딩 방식에 관한
+                            확고한(?)
+                            곰돌이 푸만의 룰이 있다.</p><br><br>
+
+                        <p>“일단 코딩하고 시작하자.”.</p>
+                        <p>“기분이 우울해질 것 같아도 걱정하지 마. 코딩하면 기분이 나아질거야.”</p>
+                        <p>“사람들은 불가능한 것은 없다고 말하지. 코딩도 마찬가지야.”</p><br>
+
+                        <p>이렇듯 푸의 말은 팍팍한 현실과 익숙해진 것만큼 레벨 업된 고된 어른살이에 지친 우리의 마음을 따뜻하고 편안하게 어루만져준다. 이처럼 곰돌이 푸를 기억하고 그리워하는
+                            독자들을 위한 책이 출간되었다.
+                            『곰돌이 푸, 행복한 코딩은 매일 있어』는 푸의 메시지와 삽화가 담긴 책이다.</p><br><br>
+
+                        <p>어떤 상황에서든 여유와 미소를 잊지 않는 곰돌이 푸를 다시 기억하고 만나는 일은, 반복되는 삶 속에서 무엇이 나를 행복하게 하는지를 잊어가는 우리에게, 다시 한번
+                            코딩에 관한 희망과 의미를 되새기게 해줄 것이다. 귀엽고 사랑스러운 모습부터 엉뚱한 모습까지 우리를 자꾸만 웃음 짓게 만드는 푸를, 진심 어린 말로 우리의 마음을
+                            자꾸만 무장 해제시키는 푸를, 초기 삽화부터 우리에게 익숙한 만화영화 속 곰돌이 푸의 모습을 퀄리티 높은 디즈니의 삽화로 소장할 수 있는 것도 큰 즐거움이다.
+                        </p><br>
+
+                        <p>나를 지키기 위해 자꾸만 나를 잃어가는 세상 속에서,</p>
+                        <p>나로 살기 위한 코딩의 말을 들여다보는 말.</p><br>
+
+                        <p>“푸는 말이야,</p>
+                        <p>머리는 별로 좋지 않지만 절대 코딩을 포기 하지 않아!</p>
+                        <p>바보 같은 짓을 해도 푸가 하면 잘 돼.”</p><br>
+
+                        <p>이 책 『곰돌이 푸, 행복한 코딩은 매일 있어』는 곰돌이 푸의 긍정적인 기운과 ‘나의 삶은 나의 방식으로 정한다’라고 말했던 독일의 철학자 니체의 말 중에서 오늘날의
+                            우리에게도 도움이 될 만한 조언들을 모았다. 말하자면 곰돌의 푸의 입으로 전하고 니체가 거드는 셈이다. 행복은 여전히 먼 곳에 있고, 나는 어떤 사람인지, 나는
+                            무엇을 할 때 행복했는지에 대한 기억도 점차 흐려져 오늘도 ‘행복’을 찾는 일이 영 요원하게 느껴질 때, 이 책을 펼치면 어떤 페이지를 열든 푸가 느긋한 미소를
+                            지으며 ‘너무 걱정하지 마. 코딩하면 다 잘 될 거야’라고 말하며 우리를 위로해줄 것이다.
+                            어린 시절 우리의 마음을 행복으로 물들여주었던 작지만 사랑스러운 그 모습 그대로!</p><br>
+
+                        <p>멋지지 않으면 어떤가요? 눈앞의 행복을 꽉 잡으세요.</p>
+                        <p>행복이 눈앞에 있는데도 나의 대외적인 이미지 때문에 외면하고 있나요? 혹은 눈앞의 행복이 생각했던 것처럼 근사하지 않아서 머뭇거리게 되나요?</p>
+                        <p>멋지지 않아도 됩니다. 다른 사람의 시선은 그리 중요한 게 아니에요. (...) 어떻게든 찾아온 행복을 꽉 움켜쥐세요!</p>
+                        <p>_본문 중에서</p><br>
+
+                        <p>이렇듯 이 책은 행복한 기억으로 남아 있는 곰돌이 푸의 코딩을 다시 불러온다. 그래서 푸를 기억하고 있는 사람이라면 누구라도, 단순하지만 편안하게 스며들어오는 푸의
+                            이야기 속에서
+                            오늘을 살아가기 위한 코딩의 지혜를 얻어갈 수 있을 것이다.</p><br>
+
+                        <p>곰돌이 푸를 사랑하는 독자들의 응원의 메시지</p><br>
+
+                        <p>* 가끔 바보 같아 보일 정도로 천하태평해 보이던 푸. 어릴 땐 지나가는 말인 줄만 알았던 한 마디, 한 마디가 가슴에 와 닿네요.
+                            오랜만에 <곰돌이 푸>를 봐야겠어요._ID seok04****</p><br>
+
+                        <p>* 만화 <곰돌이 푸>를 모르는 사람이라도, 사랑할 수밖에 없는 곰돌이 푸! 역시 잘 만들어진 만화는 이유가 있었네요. 이렇게 마음을 쿡쿡 찌르는 명대사들이 숨어
+                                있었다니! _ID newa***</p><br>
+
+                        <p>* 어릴 때는 그저 착하고 귀여운 곰돌이 푸가 주인공인 만화인 줄 알았는데, 알고 보니 삶에 관한 철학이 담긴 만화였어요. 다시 보고 싶어지네요._ID
+                            cityme****</p><br>
+
+                        <p>*‘매일 행복한 건 아니지만, 행복한 코딩은 매일 있어.’ 어린 시절 봤던 만화에 이렇게 공감 가는 인생 명언이 있었다니. 감탄 또 감탄합니다._ID hyse*****
+                        </p><br>
+
+                    </div>
+
+                    <div class="hide_btn">
+                        <p class="close">펼쳐보기<i class="fa-solid fa-chevron-down fa-2xs" style="color: #db2929;"></i></p>
+                        <p class="close">접어보기<i class="fa-solid fa-chevron-up fa-2xs" style="color: #cf262e;"></i>
+                    </div>
+
+
+                </div>
+
+                <h2>목차</h2>
+                <div class="ct_content3">
+                    <p>1. 담배 11 / 2. 원숭이 27 / 3. 커피 45 / 4. 맥주 62 / 5. 백합 75 / 6. 세정제 91 / 7. 가죽 109 / 8. 고무 128 / 9. 비누
+                        138 / 10. 알코젤 155 / 11. 단백질 바 164 / 12. 민트 176 / 13. 와인 189 / 14. 타이어 200 / 15. 대팻밥 224 / 16. 먼지
+                        240 / 17. 시나몬 번 256 / 18. 담배 연기 274 / 19. 스펀지케이크 믹스 289 / 20. 옷 가게 307 / 21. 양초 기름 328 / 22. 오보이
+                        344 / 23. 행주 356 / 24. 꿈 365 / 25. 가문비나무 383 / 26. 피자 400 / 27. 멀드 와인 416 / 28. 감자 433 / 29. 머랭
+                        441 / 30. 향수 453 / 31. 땅콩 케이크 472 / 32. 유리 489 / 33. 갓난아이 504 / 34. 할머니 522 / 에필로그 540 / 감사의 말
+                        548 / 옮긴이의 말 550</p>
+                </div>
+
+                <h2>본문중에서</h2>
+
+                <div class="ct_content4">
+                    <p>넓고 푸른 숲속에 살고 있는 곰돌이 푸는 성격이 느긋하고 꿀을 아주 좋아합니다. 숲속에서는 크고 작은 사건들이 끊이지 않지요. 곰돌이 푸는 주변에서 일어나는 다양한 사건을 긍정적으로 볼 줄 아는 능력이 있습니다. 숲속 친구들 앞에서 자랑을 하거나, 더 많은 것을 갖기 위해 욕심을 부리거나, 누군가를 화나게 하는 것에도 관심이 없어 보이지요. 문제가 생기더라도 느긋하고 긍정적인 성격의 푸는 심각하게 생각하지 않고, 단순하게 직접 행동으로 부딪혀 해결해나갑니다. 그런 푸는 어떤 상황이건 얼굴에 항상 행복한 미소가 가득합니다.
+                    </p>
+                
+
+                
+                </div>
+
+                <h2>저자소개</h2>
+
+                <div id="author_wrap">
+
+
+                    <!--프레드릭 배크만-->
+                    <div id="author_inner1">
+
+
+                        <div class="author_title1">
+                            <h4>장은희 [저]</h4>
+                            <span>신작알림 SMS 신청 </span>
+                        </div>
+
+                        <div class="ct_content5">
+                            <p>
+                                고려대학교 영어영문학과를 졸업 후 출판사에서 교과서와 참고서를 기획 · 편집했다. 대학에서 배운 일본어의 매력에 빠져 일본 문화를 공부하고 일본 서적을 읽으면서 번역가의 꿈을 키웠다. 글밥아카데미 수료 후 바른번역에서 전문번역가로 활동하며 좋은 책을 소개하는 데 힘쓰고 있다. 역서로는 『하버드 행복 수업』, 『곰돌이 푸, 행복한 일은 매일 있어』, 『아주 작은 디테일의 힘』, 『싱킹 프레임』 등이 있다.</p>
+                        </div>
+
+                    </div>
+
+                    <!--저자의 다른 책-->
+                    <div id="author_inner2">
+
+                        <div class="author_title2">
+                            <h4>저자의 다른책</h4>
+                            <span>전체보기</span>
+                        </div>
+
+                        <div class="author_book">
+
+                            <div class="author_bookbox">
+                                <img src="" alt="">
+
+                                <div class="author_text">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox">
+                                <img src="" alt="">
+
+                                <div class="author_text">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox">
+                                <img src="" alt="">
+
+                                <div class="author_text">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox">
+                                <img src="" alt="">
+
+                                <div class="author_text">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox">
+                                <img src="" alt="">
+
+                                <div class="author_text">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox">
+                                <img src="" alt="">
+
+                                <div class="author_text">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!--이은선 [역]-->
+
+                    <div id="author_inner1">
+
+
+                        <div class="author_title1">
+                            <h4>이은선 [역]</h4>
+                            <span>신작알림 SMS 신청 </span>
+                        </div>
+
+                        <div class="ct_content5">
+                            <p>
+                                연세대학교에서 중어중문학을, 국제학대학원에서 동아시아학을 전공했다. 편집자, 저작권 담당자를 거쳐 전문 번역가로
+                                활동 중이다. 옮긴 책으로는 『불타는 소녀들』『디 아더 피플』『애니가 돌아왔다』『초크맨』『불안한 사람들』『일생일대의 거래』
+                                『우리와 당신들』『베어타운』 『하루하루가 이별의 날』 『브릿마리 여기 있다』 『할머니가 미안하다고 전해달랬어요』 『위시』 『미스터 메르세데스』 『사라의 열쇠』
+                                『셜록 홈즈:모리어티의 죽음』 『딸에게 보내는 편지』
+                                『11/22/63』 『통역사』 『그대로 두기』 『누들 메이커』 『몬스터』 『리딩 프라미스』 『노 임팩트 맨』 등이 있다.</p>
+                        </div>
+
+                    </div>
+
+                    <!--역자의 다른 책-->
+                    <div id="author_inner2">
+
+                        <div class="author_title2">
+
+                            <h4>역자의 다른책</h4>
+                            <span>전체보기</span>
+
+                        </div>
+
+                        <div class="author_book">
+
+                            <div class="author_bookbox2">
+
+                                <img src="" alt="">
+
+                                <div class="author_text2">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox2">
+                                <img src="" alt="">
+
+                                <div class="author_text2">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox2">
+                                <img src="" alt="">
+
+                                <div class="author_text2">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox2">
+                                <img src="" alt="">
+
+                                <div class="author_text2">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox2">
+                                <img src="" alt="">
+
+                                <div class="author_text2">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+                            <div class="author_bookbox2">
+                                <img src="" alt="">
+
+                                <div class="author_text2">
+                                    <p><a href="#"></a></p>
+                                    <span></span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <h2>언론사 추천 및 수상내역</h2>
+                    <div id="media_recommen">
+                        <div class="media_box1">
+                            <img src="img/sub/media/awards_img.png" alt="">
+                            <span>중앙일보 추천</span>
+                        </div>
+
+                        <div class="media_box1">
+                            <img src="img/sub/media/awards_img.png" alt="">
+                            <span>동아일보 추천</span>
+                        </div>
+                    </div>
+
+                    <h2>상품정보제공고시</h2>
+
+                    <table id="table_info">
+
+                        <tr>
+                            <th>저자</th>
+                            <td>장은희</td>
+                            <th>기획사/제작사</th>
+                            <td>알에이치코리아</td>
+                        </tr>
+
+                        <tr>
+                            <th>ISBN</th>
+                            <td>9788925563350(8925563355)</td>
+                            <th>쪽수</th>
+                            <td>522쪽</td>
+                        </tr>
+
+                        <tr>
+                            <th>크기</th>
+                            <td>135*188*16</td>
+                            <th>제품구성</th>
+                            <td>공급업체 특성상 정보확인이 어려우니, 정확한 정보를 확인하시려면 1:1문의게시판을 이용 바랍니다.</td>
+                        </tr>
+
+                        <tr>
+                            <th>발행일(출간일)</th>
+                            <td>2022년 10월14일</td>
+                            <th>목차 또는 책소개</th>
+                            <td>상품 상세 정보를 확인하시고, 정보확인이 어려우시면 1:1문의 게시판을 이용 바랍니다.</td>
+                        </tr>
+
+
+                    </table>
+
+
+
+                </div>
+
+                <h2 id="event_scroll">이벤트 기획전</h2>
+
+                <div id="event_img">
+                    <img src="img/sub/event/sub_event.jpg" alt="">
+                </div>
+
+                <!--이벤트 슬라이드 시작-->
+
+                <div id="event_slide_wrap">
+
+                    <div class="event_slide1">
+                        <p class="event_title">소설 분야에서 많은 회원이 구매한 책</p>
+
+                        <span class="event_prev1"><i class="fa-solid fa-angle-left fa-lg"
+                                style="color: #c7c7c7;"></i></span>
+                        <span class="event_next1"><i class="fa-solid fa-angle-right fa-lg"
+                                style="color: #c7c7c7;"></i></span>
+
+                        <div class="event_wrap1">
+                            <div class="event_ul_wrap1">
+                                <ul class="event_ul1">
+                                    <li>
+                                        <img src="img/sub/author/author1.jpg" alt="">
+                                        <p>불편한 편의점</p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="event_slide2">
+
+                        <p class="event_title">이 책을 조회한 회원들이 같이 본 책</p>
+
+                        <span class="event_prev2"><i class="fa-solid fa-angle-left fa-lg"
+                                style="color: #c7c7c7;"></i></span>
+                        <span class="event_next2"><i class="fa-solid fa-angle-right fa-lg"
+                                style="color: #c7c7c7;"></i></span>
+
+                        <div class="event_wrap2">
+                            <div class="event_ul_wrap2">
+                                <ul class="event_ul2">
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="event_slide3">
+
+                        <p class="event_title">이 책을 조회한 회원들이 같이 본 책</p>
+
+                        <span class="event_prev3"><i class="fa-solid fa-angle-left fa-lg"
+                                style="color: #c7c7c7;"></i></span>
+                        <span class="event_next3"><i class="fa-solid fa-angle-right fa-lg"
+                                style="color: #c7c7c7;"></i></span>
+
+                        <div class="event_wrap3">
+                            <div class="event_ul_wrap3">
+                                <ul class="event_ul3">
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- all review 시작 -->
+
+                <div id="all_review">
+
+                    <!-- 리뷰 타이틀 -->
+
+                    <h2>리뷰
+                        <span class="star">★★★★☆</span>
+                        <span>9.1</span>
+                        <span>(총 190건)</span>
+
+                        <div id="bottom_right">
+                            <span class="bottom_color">구매 후 리뷰 작성 시, 북피니언 지수 최대 600점</span>
+                            <div class="bottom_box">리뷰쓰기</div>
+
+                        </div>
+
+                    </h2>
+
+                    <!-- 베스트 리뷰 contents1 -->
+                    <div id="re_best">
+
+                        <div id="re_best_title">
+
+                            <div class="re_awards">
+                                <img src="img/sub/bottom_review/awards_img2.png" alt="">
+                                <p>베스트 리뷰</p>
+                            </div>
+
+                        </div>
+
+                        <div class="re_content">
+
+                            <div class="re_top">
+
+                                <div class="re_left">
+                                    <span class="star">★★★★★</span>
+                                    <span class="re_title">곰돌이 푸, 행복한 코딩은 매일 있어</span>
+                                    <span class="re_redbox">수상작</span>
+                                </div>
+
+                                <div class="re_right">
+                                    <p>samin***|2022/05/22</p>
+                                </div>
+
+                            </div>
+
+                            <p> [곰돌이 푸, 행복한 코딩은 매일 있어]는 디즈니표 곰돌이 푸의 삽화와 메세지를 담은 에세이다. 디즈니 캐릭터를 활용한 일련의 에세이집이
+                                몇권인가 출간되었는데 그중에서 [곰돌이 푸, 행복한 코딩은 매일 있어]가 가장 유명하고 베스트셀러까지 되었던 꽤나</p>
+
+                            <div class="re_best_hide1">
+                                <p> 인기가 있던 책으로 알고 있다. 그 책이 몇 년만에 새롭게 포레스트 버전이란 이름으로 재출시되었다. 약간 생소할 수도 있는데 책임 의식 있는 방식으로
+                                    산림자원의 경영 및 관리가 이루어지는 숲에서 생산된 제품이라는 'FSC 인증'도 받았고, 석유 의존도와 독성이 낮은 콩기름으로 인쇄를 한 '포레스트
+                                    버전'이란 이름에 걸맞는 그야말로 친환경 컨셉이다. 곰돌이 푸라는 캐릭터 자체가 숲에서 자연과 함께 어울려 유유자적 살아가는 자연인과 같은 느낌이고,
+                                    거기다 책의 내용 역시 팍팍한 현실과 숨가쁜 생활 속에서 잠시 쉼을 주는 메세지라서 전체적으로
+                                    이 책과 포레스트 에디션이라는 컨셉이 잘 들어맞는다고 느껴진다. </p><br>
+
+                                <p>책 표지가 곰돌이 푸 단독샷에서 푸와 친구들의 단체샷으로 바뀌었는데 혼자가 아닌 우리라는 느낌이 들어서 이쪽이 더 좋다. 그리고 매끈한 캐릭터 디자인에서
+                                    파스텔풍의 삽화로 바뀐 것도 따뜻하고 포근한 느낌이 들어서 더 좋다. 표지의 촉감도 참 좋다. 비닐이 아닌 까슬까슬한 종이라서 책을 들고 읽을 때
+                                    손끝에 닿을 때마다 따스함이 느껴진다. 말하자면 매끈한 펜이 아니라 사각거리는 연필을 쥐고 글을 쓸 때와 같은 감성이 느껴진다고 하겠다. 책 속에
+                                    등장하는 삽화는 아마 디즈니 만화영화의 장면들이 사용된 것 같은데 그외에도 캐릭터 스케치와 일러스트 같은 여러 형식의 삽화가 들어가 있어서 다양한 푸의
+                                    그림을 즐길 수가 있다.
+                                    삽화가 상당히 퀄리티가 높고 깔끔해서 이것만으로도 곰돌이 푸를 좋아하는 사람에게는 소장가치가 있겠다.</p><br>
+
+                                <p>책의 형식은 곰돌이 푸나 그 친구들의 삽화와 함께 '다 잘될거야, 걱정하지마' 느낌의 짧은 감성 메세지가 보여지는 식이다. '인생의 늪에서 빠져 나오는
+                                    힘' '모든 문제는 생각보다 단순하다' '인생이라는 숲속에서 나를 잃지 않으려면'라는 3가지 테마로 챕터가 나뉘어져 있지만 챕터에 따라 그 내용이 많이
+                                    다르다거나 각 챕터별로 특별히 차별점이 많이 느껴지는 건 아니다. 여기 소개된 문구들은 아마 원작 만화에서 나왔던 대사들인 것 같다. 디즈니표 곰돌이
+                                    푸는 캐릭터 자체가 느긋하고 긍정적인 아이라서 주변에서 여러가지 사건사고가 발생해도 항상 밝고 긍정적으로 대처하는 것이 특징이다. 욕심을 내지도 않고,
+                                    좀처럼 화를 내지도 않으며 심각하게 생각하지도 않는다. 또 어떤 일이건 단순하고 직접적으로 해결해나가는데 이런 점 때문에 애니메이션 자체가 상당히
+                                    밝고, 힐링물에 가까워서
+                                    작품 속에 나오는 대사들도 감성적이고 마음이 따뜻해지는 인스타 명언 같은 문장이 많은 것 같다.</p>
+
+                            </div>
+
+                            <div class="re_bottom">
+
+                                <p>댓글(0) <span class="bar">|</span> 추천(0) <span class="bar">|</span>
+                                    <img src="img/sub/bottom_review/review_re_btn.png" alt="">
+                                </p>
+
+                                <span class="re_close1">펼쳐보기<i class="fa-solid fa-chevron-down fa-2xs" style="color: #db2929;"></i></span>
+                                <span class="re_close1">접어보기<i class="fa-solid fa-chevron-up fa-2xs" style="color: #cf262e;"></i></span>
+
+                            </div>
+
+                        </div>
+
+                        <!--리뷰 contents2-->
+                        <div class="re_content">
+
+                            <div class="re_top">
+
+                                <div class="re_left">
+                                    <span class="star">★★★★★</span>
+                                    <span class="re_title">곰돌이 푸, 행복한 코딩은 매일 있어</span>
+                                    <span class="re_redbox">수상작</span>
+                                </div>
+
+                                <div class="re_right">
+                                    <p>white***|2022/05/22</p>
+                                </div>
+
+                            </div>
+
+                            <p> 그 빙그레 웃는 푸의 모습만 보더라도 기분이 좋아지는 날이 많습니다. 그래서 이 푸를 즐겁게 만나면서 나의 일상과 마음을 돌아볼 수 있는 책을 마주하는 시간에
+                                저절로 감사하게 됩니다. 이 책 [곰돌이 푸, 행복한 일은 매일 있어]로 즐거운 푸에 다시 한 번 반하고</p>
+
+                            <div class="re_best_hide2">
+                                <p> 푸와 친구들 덕분에 새로워지는 나를 만납니다. 이 책은 '아직 코딩을 기다리는 우리에게'라며 마치 마음에 노크를 똑똑똑~ 하고서 푸와 친구들을 만나러
+                                    가자고 손을 내미는 것만 같습니다. </p><br>
+
+                                <p>책 표지가 곰돌이 푸 단독샷에서 푸와 친구들의 단체샷으로 바뀌었는데 혼자가 아닌 코딩과 함께라는 느낌이 들어서 이쪽이 더 좋다. 그리고 매끈한 캐릭터
+                                    디자인에서 파스텔풍의 삽화로 바뀐 것도 따뜻하고 포근한 느낌이 들어서 더 좋다. 표지의 촉감도 참 좋다. 비닐이 아닌 까슬까슬한 종이라서 책을 들고
+                                    읽을 때 손끝에 닿을 때마다 따스함이 느껴진다. 말하자면 매끈한 펜이 아니라 사각거리는 연필을 쥐고 글을 쓸 때와 같은 감성이 느껴진다고 하겠다. 책
+                                    속에 등장하는 삽화는 아마 디즈니 만화영화의 장면들이 사용된 것 같은데 그외에도 캐릭터 스케치와 일러스트 같은 여러 형식의 삽화가 들어가 있어서 다양한
+                                    푸의 그림을 즐길 수가 있다.
+                                    삽화가 상당히 퀄리티가 높고 깔끔해서 이것만으로도 곰돌이 푸를 좋아하는 사람에게는 소장가치가 있겠다.</p><br>
+
+                                <p>책에서 소개하는 것처럼, 생각만 해도 미소가 지어지고 기분이 절로 좋아지는 '디즈니의 사랑스러운 푸' 그리고 그 친구들을 만나서 행복의 에너지를 받을 수
+                                    있어서 기쁘고 또 감사합니다.
+
+                                    [곰돌이 푸, 행복한 코딩은 매일 있어]를 통해서 수수한 그림터치와 색감에 반하게 되는 푸와 친구들의 모습과 그네들이 들려주는 메시지에 두 번 세 번
+                                    반합니다. </p>
+
+                            </div>
+
+                            <div class="re_bottom">
+
+                                <p>댓글(0) <span class="bar">|</span> 추천(0) <span class="bar">|</span>
+                                    <img src="img/sub/bottom_review/review_re_btn.png" alt="">
+                                </p>
+
+                                <span class="re_close2">펼쳐보기<i class="fa-solid fa-chevron-down fa-2xs" style="color: #db2929;"></i></span>
+                                <span class="re_close2">접어보기<i class="fa-solid fa-chevron-up fa-2xs" style="color: #cf262e;"></i></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!--리뷰 contents 3-->
+                        <div class="re_content">
+
+                            <div class="re_top">
+
+                                <div class="re_left">
+                                    <span class="star">★★★★☆</span>
+                                    <span class="re_title">곰돌이 푸, 행복한 코딩은 매일 있어</span>
+                                    <span class="re_redbox">수상작</span>
+                                </div>
+
+                                <div class="re_right">
+                                    <p>coding***|2022/05/22</p>
+                                </div>
+
+                            </div>
+
+                            <p> 곰돌이 푸 행복한 코딩은 매일 있어라는 책 너무 좋아용 다음 시리즈도 빨리 사서 읽고 싶네요!! 내용도 좋고 작가님도 너무너무 좋고 필체도 진짜 굿입니다.
+                                표지랑 내용중에 들어있는 일러스트도 너무 코딩을 좀 더 사랑하게 된 것 같아요. 글 진짜 너무 좋고</p>
+
+                            <div class="re_best_hide3">
+                                <p> 코딩에 두려움이 있으시거나, 배워보고싶으신 분들 책 많이 읽으시고 꼭 이 책 읽으세요. 진짜 좋은책입니당!! 이 책 읽으시면거 간식도 먹고 커피랑 쿠키
+                                    추천해드려요. 히히 헷.! 그리고 진짜진짜 내용도 많고 책에서 충고도 많이 해주고 부족한 것 하나 없는 그런 책이에요. 내용도 진짜진짜 좋아요. 몇 번
+                                    씩이나 강조하지만 꼭꼭 읽어보세요. 정말 후회하지 않으실거에요!!!!! 정말 인생의 좋은 도움이 되는 그런 책이에요. 추천합니다. !! 이 책 읽으시고
+                                    여러분의 인생에 조금의 변화가 있었으면 좋게다는 생각이 드네요. 이건 사서 보고 소장해도 전혀 아깝지 않아요. 정말 후회하지 않을 겁니다. 여러번
+                                    강조하지만. 어쨌든 읽어보세요!!</p><br>
+                            </div>
+
+                            <div class="re_bottom">
+
+                                <p>댓글(0) <span class="bar">|</span> 추천(0) <span class="bar">|</span>
+                                    <img src="img/sub/bottom_review/review_re_btn.png" alt="">
+                                </p>
+
+                                <span class="re_close3">펼쳐보기<i class="fa-solid fa-chevron-down fa-2xs" style="color: #db2929;"></i></span>
+                                <span class="re_close3">접어보기<i class="fa-solid fa-chevron-up fa-2xs" style="color: #cf262e;"></i></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!--리뷰 contents 4-->
+                        <div class="re_content">
+
+                            <div class="re_top">
+
+                                <div class="re_left">
+                                    <span class="star">★★★★☆</span>
+                                    <span class="re_title">곰돌이 푸, 행복한 코딩은 매일 있어</span>
+                                    <span class="re_redbox">수상작</span>
+                                </div>
+
+                                <div class="re_right">
+                                    <p>qqldk***|2022/05/22</p>
+                                </div>
+
+                            </div>
+
+                            <p> 코딩때문에 빙그레 웃는 푸의 모습만 보더라도 기분이 좋아지는 날이 많습니다. 그래서 이 푸를 즐겁게 만나면서 나의 일상과 마음을 돌아볼 수 있는 책을 마주하는
+                                시간에 저절로 감사하게 됩니다. 이 책 [곰돌이 푸, 행복한 코딩은 매일 있어]로 즐거운 푸에 다시 한 번 반하고 푸와 친구들 덕분에 새로워지는 나를
+                                만납니다. 이 책은 '아직 코딩을 기다리는 우리에게'라며 마치 마음에 노크를 똑똑똑~ 하고서 푸와 친구들을 만나러 가자고 손을 내미는 것만 같습니다. </p>
+
+                            <div class="re_best_hide4">
+                                <p> 책에서 소개하는 것처럼, 생각만 해도 미소가 지어지고 기분이 절로 좋아지는 '디즈니의 사랑스러운 푸' 그리고 그 친구들을 만나서 행복의 에너지를 받을
+                                    수 있어서 기쁘고 또 감사합니다.</p><br>
+
+
+                            </div>
+
+                            <div class="re_bottom">
+
+                                <p>댓글(0) <span class="bar">|</span> 추천(0) <span class="bar">|</span>
+                                    <img src="img/sub/bottom_review/review_re_btn.png" alt="">
+                                </p>
+
+                                <span class="re_close4">펼쳐보기<i class="fa-solid fa-chevron-down fa-2xs" style="color: #db2929;"></i></span>
+                                <span class="re_close4">접어보기<i class="fa-solid fa-chevron-up fa-2xs" style="color: #cf262e;"></i></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!--리뷰 contents 5-->
+                        <div class="re_content">
+
+                            <div class="re_top">
+
+                                <div class="re_left">
+                                    <span class="star">★★★★☆</span>
+                                    <span class="re_title">곰돌이 푸, 행복한 코딩은 매일 있어</span>
+                                    <span class="re_redbox">수상작</span>
+                                </div>
+
+                                <div class="re_right">
+                                    <p>pick***|2022/05/22</p>
+                                </div>
+
+                            </div>
+
+                            <p> [곰돌이 푸, 행복한 코딩은 매일 있어]는 디즈니표 곰돌이 푸의 삽화와 메세지를 담은 에세이다. 디즈니 캐릭터를 활용한 일련의 에세이집이
+                                몇권인가 출간되었는데 그중에서 [곰돌이 푸, 행복한 코딩은 매일 있어]가 가장 유명하고 베스트셀러까지 되었던 꽤나</p>
+
+                            <div class="re_best_hide5">
+
+                                <p>책 표지가 곰돌이 푸 단독샷에서 푸와 친구들의 단체샷으로 바뀌었는데 혼자가 아닌 우리라는 느낌이 들어서 이쪽이 더 좋다. 그리고 매끈한 캐릭터 디자인에서
+                                    파스텔풍의 삽화로 바뀐 것도 따뜻하고 포근한 느낌이 들어서 더 좋다. 표지의 촉감도 참 좋다. 비닐이 아닌 까슬까슬한 종이라서 책을 들고 읽을 때
+                                    손끝에 닿을 때마다 따스함이 느껴진다. 말하자면 매끈한 펜이 아니라 사각거리는 연필을 쥐고 글을 쓸 때와 같은 감성이 느껴진다고 하겠다. 책 속에
+                                    등장하는 삽화는 아마 디즈니 만화영화의 장면들이 사용된 것 같은데 그외에도 캐릭터 스케치와 일러스트 같은 여러 형식의 삽화가 들어가 있어서 다양한 푸의
+                                    그림을 즐길 수가 있다.
+                                    삽화가 상당히 퀄리티가 높고 깔끔해서 이것만으로도 곰돌이 푸를 좋아하는 사람에게는 소장가치가 있겠다.</p><br>
+
+                                <p>책의 형식은 곰돌이 푸나 그 친구들의 삽화와 함께 '다 잘될거야, 걱정하지마' 느낌의 짧은 감성 메세지가 보여지는 식이다. '인생의 늪에서 빠져 나오는
+                                    힘' '모든 문제는 생각보다 단순하다' '인생이라는 숲속에서 나를 잃지 않으려면'라는 3가지 테마로 챕터가 나뉘어져 있지만 챕터에 따라 그 내용이 많이
+                                    다르다거나 각 챕터별로 특별히 차별점이 많이 느껴지는 건 아니다. 여기 소개된 문구들은 아마 원작 만화에서 나왔던 대사들인 것 같다. 디즈니표 곰돌이
+                                    푸는 캐릭터 자체가 느긋하고 긍정적인 아이라서 주변에서 여러가지 사건사고가 발생해도 항상 밝고 긍정적으로 대처하는 것이 특징이다. 욕심을 내지도 않고,
+                                    좀처럼 화를 내지도 않으며 심각하게 생각하지도 않는다. 또 어떤 일이건 단순하고 직접적으로 해결해나가는데 이런 점 때문에 애니메이션 자체가 상당히
+                                    밝고, 힐링물에 가까워서
+                                    작품 속에 나오는 대사들도 감성적이고 마음이 따뜻해지는 인스타 명언 같은 문장이 많은 것 같다.</p>
+
+                            </div>
+
+                            <div class="re_bottom">
+
+                                <p>댓글(0) <span class="bar">|</span> 추천(0) <span class="bar">|</span>
+                                    <img src="img/sub/bottom_review/review_re_btn.png" alt="">
+                                </p>
+
+                                <span class="re_close5">펼쳐보기<i class="fa-solid fa-chevron-down fa-2xs" style="color: #db2929;"></i></span>
+                                <span class="re_close5">접어보기<i class="fa-solid fa-chevron-up fa-2xs" style="color: #cf262e;"></i></span>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!--리뷰 버튼-->
+
+                    <div class="re_button">
+
+                        <div class="re_bt_left">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                            </ul>
+                        </div>
+
+                        <div class="re_bt_right">
+                            <span>총 38페이지</span>
+                        </div>
+
+                    </div>
+
+                    <!--기대평-->
+                    <div id="expect">
+                        <h2>기대평</h2>
+
+                        <div id="expect_wr">
+
+                            <div class="wr_title">
+                                <ul class="wr_title_left">
+                                    <li>
+                                        <input type="radio" name="expect" id="expect" checked>
+                                        <label for="expect">기대평</label>
+                                    </li>
+
+                                    <li><span class="gray">|</span></li>
+
+                                    <li><span class="dark_gray">평점 ★★★★☆</span></li>
+                                </ul>
+
+                                <div class="wr_title_right">
+                                    <p>최근순 | 평점 높은 순</p>
+                                </div>
+
+                            </div>
+
+                            <div class="wr_register">
+
+                                <textarea name="" id="" cols="30" rows="10">
+                                        이 책의 기대평을 간단히 남겨주세요.
+                                    </textarea>
+                                <button>등록하기</button>
+
+                            </div>
+                        </div>
+
+                        <div id="expect_review">
+                            <div class="expect_re_title">
+                                <h3>기대평 ★★★★★ 9.9 </h3>
+                                <p>최신순 | 추천순</p>
+                            </div>
+
+                            <div class="expect_re">
+                                <h3>
+                                    <span>★★★★★</span>
+                                    <span>wind4***</span>
+                                    <span class="expect_long">잘 받았어요</span>
+                                </h3>
+                                <p>2023/05/05</p>
+                            </div>
+
+                            <div class="expect_re">
+                                <h3>
+                                    <span>★★★★★</span>
+                                    <span>nanaro0***</span>
+                                    <span class="expect_long">빠른 배송 감사합니다 ~~</span>
+                                </h3>
+                                <p>2022/12/23</p>
+
+                            </div>
+
+                            <div class="expect_re">
+                                <h3>
+                                    <span>★★★★★</span>
+                                    <span>eps1***</span>
+                                    <span class="expect_long">굿</span>
+                                </h3>
+                                <p>2022/08/02</p>
+                            </div>
+
+                            <div class="re_button">
+
+                                <div class="re_bt_left">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                    </ul>
+                                </div>
+        
+                                <div class="re_bt_right">
+                                    <span>총 38페이지</span>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+
+                    </div>
+                </div>
+
+
+            <div id="seller">
+                <h2>판매자 정보</h2>
+
+                <div id="seller_inner">
+                    <p>인터파크도서에 등록된 오픈마켓 상품은 그 내용과 책임이 모두 판매자에게 있으며, 인터파크도서는 해당 상품과 내용에 대해 책임지지 않습니다.</p>
+
+                    <table class="seller_table">
+                        <tr>
+                            <th>상호</th>
+                            <td>(주)교보문고</td>
+                        </tr>
+
+                        <tr>
+                            <th>대표자명</th>
+                            <td>안병현</td>
+                        </tr>
+
+                        <tr>
+                            <th>사업자등록번호</th>
+                            <td>102-81-11670</td>
+                        </tr>
+
+                        <tr>
+                            <th>연락처</th>
+                            <td>1544-1900</td>
+                        </tr>
+
+                        <tr>
+                            <th>전자우편주소</th>
+                            <td>callcenter@kyobobook.co.kr</td>
+                        </tr>
+
+                        <tr>
+                            <th>통신판매업신고번호</th>
+                            <td>01-0653</td>
+                        </tr>
+
+                        <tr>
+                            <th>영업소재지</th>
+                            <td>서울특별시 종로구 종로 1(종로1가,교보빌딩)</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <div id="exchange">
+                <h2>교환/환불</h2>
+
+                <table class="ex_table">
+                    <tr>
+                        <th>상호</th>
+                        <td>(주)교보문고</td>
+                    </tr>
+
+                    <tr>
+                        <th>대표자명</th>
+                        <td>안병현</td>
+                    </tr>
+
+                    <tr>
+                        <th>사업자등록번호</th>
+                        <td>102-81-11670</td>
+                    </tr>
+
+                    <tr>
+                        <th>연락처</th>
+                        <td>1544-1900</td>
+                    </tr>
+
+                    <tr>
+                        <th>전자우편주소</th>
+                        <td>callcenter@kyobobook.co.kr</td>
+                    </tr>
+
+                    <tr>
+                        <th>통신판매업신고번호</th>
+                        <td>01-0653</td>
+                    </tr>
+
+                    <tr>
+                        <th>영업소재지</th>
+                        <td>서울특별시 종로구 종로 1(종로1가,교보빌딩)</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div id="delivery">
+                <h2>배송안내</h2>
+                
+                <ul class="delivery_ul">
+                    <li>교보문고 상품은 택배로 배송되며, 출고완료 1~2일내 상품을 받아 보실 수 있습니다.</li>
+                    <li>출고가능 시간이 서로 다른 상품을 함께 주문할 경우 출고가능 시간이 가장 긴 상품을 기준으로 배송됩니다.</li>
+                    <li>군부대, 교도소 등 특정기관은 우체국 택배만 배송가능합니다.</li>
+                    <li>군부대, 교도소 등 특정기관은 우체국 택배만 배송가능합니다.
+                        <ul class="deliver_small_ul">
+                            <li>- 도서 구매 시, 1만 원 이상 무료, 1만원 미만 2천 원</li>
+                            <li>- 상품별 배송비가 있는 경우, 상품별 배송비 정책 적용</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer_wrap">
+            <div id="menu">
+                <ul>
+                    <li class="footer_color"><a href=""><span>개인정보처리방침</span></a></li>
+                    <li>|</li>
+                    <li><a href="">청소년보호정책</a></li>
+                    <li>|</li>
+                    <li><a href="">이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="">IR</a></li>
+                    <li>|</li>
+                    <li><a href="">회사소개</a></li>
+                    <li>|</li>
+                    <li><a href="">채용공고</a></li>
+                    <li>|</li>
+                    <li><a href="">우수고객제도</a></li>
+                    <li>|</li>
+                    <li><a href="">수익배분프로그램</a></li>
+                    <li>|</li>
+                    <li><a href="">광고안내</a></li>
+                    <li>|</li>
+                    <li><a href="">담당자안내</a></li>
+                    <li>|</li>
+                    <li><a href="">판매자매니저</a></li>
+
+                </ul>
+            </div>
+
+            <div id="info_1_wrap">
+                <div class="info_1_box_left">
+
+                    <div class="info_box">
+                        <h3 class="info_title">주식회사 인터파크</h3>
+                        <a class="info_a">서울특별시 강남구 삼성로 512 삼성동빌딩 10층(삼성동)</a>
+                        <a class="info_a">대표이사 김강세</a>
+                        <a class="info_a">사업자등록번호 824-81-02515 ㅣ 통신판매업신고 2022-서울강남-02179</a>
+                    </div>
+                </div>
+
+                <div class="info_1_box_mid">
+                    <div class="info_box_mid">
+                        <h3 class="info_title">고객센터</h3>
+                        <a class="info_a">전화 1577-2555</a>
+                        <a class="info_a">팩스 02-6924-9050</a>
+                        <a class="info_a">개인정보보유기간 : 회원탈퇴시까지</a>
+                        <a class="info_a">개인정보보호책임자 : cpo@interpark.com</a>
+                    </div>
+                </div>
+
+                <div class="info_1_box_right">
+                    <div class="info_box">
+                        <h3 class="info_title">구매안전 서비스</h3>
+                        <a class="info_a">고객님은 안전거래를 위해 현금으로 5만원 이상 결제시 구매자가 보호를 받을</a>
+                        <a class="info_a">수 있는 구매안전 서비스를(쇼핑몰보증보험) 이용하실수 있습니다.</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="info_2_wrap">
+                <h3 class="info2_title">인터파크 도서에 등록된 오픈마켓 상품은 그 내용과 책임이 모두 판매자에게 있으며, 인터파크 도서는 해당상품과 내용에 대해 책임지지 않습니다.</h3>
+                <a class="info2_a">Copyright ⓒ INTERPARK Corporation All rights reserved.</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

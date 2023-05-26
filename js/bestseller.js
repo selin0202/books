@@ -1,0 +1,11 @@
+$(function(){
+    $("#chart_week_box").hide();
+    $("#today_box").mouseover(function(){
+        $("#chart_week_box").hide();
+        $("#chart_today_box").fadeIn("slow");
+    });
+    $("#week_box").mouseover(function(){
+        $("#chart_today_box").hide();
+        $("#chart_week_box").fadeIn("slow");
+    });
+});
